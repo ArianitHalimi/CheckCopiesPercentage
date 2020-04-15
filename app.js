@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-const path = require('path')
 const fs = require('fs')
 var jsdiff = require('diff')
 const fstatistics = require('./modules/checkFileStatistics')
@@ -8,7 +7,6 @@ let filesContent = []
 let fileWords = []
 let numOfFiles = 0
 let percentage = []
-
 
 if(process.argv.length != 5){
   console.log('Please check the syntax')
@@ -41,8 +39,4 @@ if(process.argv[3] && process.argv[2]==='check-folder'){
     console.log('This path does not exists');
     process.exit()
   }
-}
-
-const countWords = text => {
-  return text.trim().split(/\s+/).length;
 }

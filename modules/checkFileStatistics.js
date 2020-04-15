@@ -5,7 +5,6 @@ const filePercentage = (fileArray,numOfFiles) => {
   for (var i = 0; i < fileArray.length; i++) {
     for (var j = 0; j < fileArray.length; j++) {
       sortedValues.push([(100*(stringSimilarity.compareTwoStrings(fileArray[i], fileArray[j])).toFixed(2)),'file'+i,'file'+j])
-      //console.log(100*(stringSimilarity.compareTwoStrings(fileArray[i], fileArray[j])).toFixed(2) + '%');
     }
   }
   console.log(sortedValues.sort(sortArray));
@@ -19,6 +18,5 @@ const sortArray = (a,b) => {
         return (a[0] < b[0]) ? 1 : -1;
     }
 }
-
 
 module.exports = filePercentage

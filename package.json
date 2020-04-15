@@ -1,6 +1,6 @@
 {
   "name": "checkcopiespercentage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check percentage of copies for a folder of files you want to check",
   "main": "app.js",
   "scripts": {
