@@ -1,0 +1,16 @@
+{
+  "name": "checkcopiespercentage",
+  "version": "1.0.0",
+  "description": "Check percentage of copies for a folder of files you want to check",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arianit Halimi",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "diff": "^4.0.2",
+    "string-similarity": "^4.0.1"
+  }
+}
